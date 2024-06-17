@@ -1,5 +1,9 @@
 AUDIO_SUPPORTED = no        # Audio is not supported
 
+POINTING_DEVICE_RIGHT = yes
+
+POINTING_DEVICE_ENABLE = yes
+
 POINTING_DEVICE_DRIVER = pmw3360
 
 SERIAL_DRIVER = vendor
