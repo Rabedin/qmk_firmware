@@ -9,8 +9,8 @@ enum custom_keycodes {
 bool set_scrolling = false;
 
 // Values for scroll speed
-#define SCROLL_DIVISOR_H 8.0
-#define SCROLL_DIVISOR_V 8.0
+#define SCROLL_DIVISOR_H 20.0
+#define SCROLL_DIVISOR_V 20.0
 
 // Accumulated scroll value variables
 float scroll_accumulated_h = 0;
