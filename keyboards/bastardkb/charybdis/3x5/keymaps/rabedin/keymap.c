@@ -43,7 +43,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case DRAG_SCROLL:
             // Toggle set_scrolling when DRAG_SCROLL key is pressed or released
-            set scrolling = record->event.pressed;
+            set_scrolling = record->event.pressed;
             break;
         default:
             break;
