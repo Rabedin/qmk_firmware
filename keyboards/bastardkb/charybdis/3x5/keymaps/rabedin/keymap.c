@@ -51,14 +51,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
+// Mouse sensitivity stuff
+uint16_t default_sens = 800; // Default sensitivity variable
+uint16_t sniping_sens = 200; // Lower sensitivity variable for mouse layer
+
 // Function to lower mouse sens on mouse layer
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch (get_highest_layer(state)) {
         case 4:
-            pointing_device_set_cpi(400);
+            pointing_device_set_cpi(sniping_sens);
             break;
         default:
-            pointing_device_set_cpi(1600);
+            pointing_device_set_cpi(default_sens);
             break;
     }
     return state;
