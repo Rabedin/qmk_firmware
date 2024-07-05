@@ -94,10 +94,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 	[4] = LAYOUT(
-        KC_NO, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        DF(0), KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, DF(5),
         KC_NO, KC_NO, KC_NO, DB_TOGG, KC_NO, KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, DRAG_SCROLL,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, DRAG_SCROLL,
         KC_NO, KC_NO, KC_NO, KC_BTN4, KC_BTN5
+    ),
+	[5] = LAYOUT(
+        KC_TAB, KC_Q, KC_W, KC_E, KC_R,         KC_T, KC_Y, KC_U, KC_I, KC_O,
+        KC_LSFT, KC_A, KC_S, KC_D, KC_F,        KC_G, KC_BTN1, KC_BTN2, KC_BTN3, KC_L,
+        KC_LCTL, KC_Z, KC_X, KC_C, KC_V,        KC_B, KC_WH_U, KC_WH_D, KC_COMM, KC_DOT,
+        KC_ALT, KC_SPC, KC_BSPC,                KC_ESC, KC_BTN4
     )
 };
 
